@@ -1,0 +1,4022 @@
+# vsim -vopt work.alu_top -voptargs="+acc=npr" -assertdebug -l simulation.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit" 
+# Start time: 23:19:57 on Jul 27,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.alu_top_sv_unit(fast)
+# Loading work.alu_top(fast)
+# Loading work.alu_interface(fast)
+# Loading work.ALU_DESIGN(fast)
+# Loading work.alu_interface(fast)
+# ** Warning: (vsim-3015) alu_top.sv(33): [PCDPC] - Port size (10) does not match connection size (16) for port 'RES'. The port definition is at: alu_design.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /alu_top/duv File: alu_design.v
+# coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb
+#  run -all
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	generator signals
+#  Time: 0 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 0 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 50 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 50 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 23
+# 
+# 	MONITOR STARTED
+#  Time: 50 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 50 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =    19 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 90 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 90 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 90 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 90 , res = 19 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 90 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 90 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 90 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 90 , res = 19 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 1
+# AT                  130, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 130 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 130 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 27
+# 
+# 	Monitor delay
+#  Time: 130 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 11 , opb = 20
+#  Time: 130 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 130 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 130 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 170 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 170 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 170 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 170 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 1
+# AT                  210, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 210 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 210 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 32
+# 
+# 	Monitor delay
+#  Time: 210 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 104 , opb = 117
+#  Time: 210 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 210 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 210 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 250 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 250 , res = 348 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 250 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 250 , res = 348 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 250 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 250 , res = 348 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 250 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 250 , res = 348 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 2
+# AT                  290, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 290 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 32
+# 
+# 	Monitor delay
+#  Time: 290 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 234 , opb = 114
+#  Time: 290 , res = 348 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 290 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 330 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 330 , res = 142 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 330 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 330 , res = 142 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 330 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 330 , res = 142 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 330 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 330 , res = 142 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 3
+# AT                  370, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 370 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 33
+# 
+# 	Monitor delay
+#  Time: 370 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 37 , opb = 105
+#  Time: 370 , res = 142 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 370 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 410 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 410 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 410 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 410 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 4
+# AT                  450, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 450 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 40
+# 
+# 	Monitor delay
+#  Time: 450 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 100 , opb = 171
+#  Time: 450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 450 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 490 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 490 , res = 140 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 490 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 490 , res = 140 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 490 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 490 , res = 140 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 490 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 490 , res = 140 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 2
+# AT                  530, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 530 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 43
+# 
+# 	Monitor delay
+#  Time: 530 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 1 , opa = 145 , opb = 53
+#  Time: 530 , res = 140 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 570 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 570 , res = 145 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 570 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 570 , res = 72 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 570 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 570 , res = 145 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 570 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 570 , res = 72 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 3
+# AT                  610, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 610 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 45
+# 
+# 	Monitor delay
+#  Time: 610 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 145 , opb = 67
+#  Time: 610 , res = 145 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 610 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 650 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 650 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 650 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 650 , res = 135 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 650 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 650 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 650 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 650 , res = 135 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 4
+# AT                  690, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 690 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 46
+# 
+# 	Monitor delay
+#  Time: 690 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 134 , opb = 78
+#  Time: 690 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 690 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 730 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 730 , res = 156 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 730 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 730 , res = 156 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 730 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 730 , res = 156 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 730 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 730 , res = 156 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 5
+# AT                  770, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 770 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 46
+# 
+# 	Monitor delay
+#  Time: 770 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 1 , opa = 228 , opb = 197
+#  Time: 770 , res = 156 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR STARTED
+#  Time: 770 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =   201 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 810 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 810 , res = 203 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 810 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 810 , res = 201 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 810 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 810 , res = 203 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 810 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 810 , res = 201 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 5
+# AT                  850, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 850 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 47
+# 
+# 	Monitor delay
+#  Time: 850 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 184 , opb = 202
+#  Time: 850 , res = 203 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 850 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 890 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 890 , res = 63 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 890 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 890 , res = 63 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 890 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 890 , res = 63 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 890 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 890 , res = 63 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 6
+# AT                  930, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 930 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 48
+# 
+# 	Monitor delay
+#  Time: 930 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 64 , opb = 82
+#  Time: 930 , res = 63 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 930 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# result extracting
+# 	MONITOR SIGNALS ENDED
+#  Time: 990 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 990 , res = 929 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 990 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 990 , res = 16289 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 990 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 990 , res = 929 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 990 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 990 , res = 16289 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 6
+# AT                 1030, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 1030 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 48
+# 
+# 	Monitor delay
+#  Time: 1030 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 90 , opb = 178
+#  Time: 1030 , res = 929 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1030 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 1070 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1070 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1070 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1070 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1070 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1070 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1070 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1070 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 7
+# AT                 1110, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1110 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 49
+# 
+# 	Monitor delay
+#  Time: 1110 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 0 , opa = 190 , opb = 112
+#  Time: 1110 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1110 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 1150 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1150 , res = 89 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1150 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1150 , res = 89 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1150 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1150 , res = 89 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1150 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1150 , res = 89 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 8
+# AT                 1190, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1190 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1190 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 49
+# 
+# 	Monitor delay
+#  Time: 1190 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 166 , opb = 180
+#  Time: 1190 , res = 89 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1190 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1190 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 1230 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1230 , res = 16 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1230 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1230 , res = 16 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1230 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1230 , res = 16 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1230 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1230 , res = 16 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 9
+# AT                 1270, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 1270 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 49
+# 
+# 	Monitor delay
+#  Time: 1270 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 17 , opb = 53
+#  Time: 1270 , res = 16 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1270 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# result extracting
+# 	MONITOR SIGNALS ENDED
+#  Time: 1330 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1330 , res = 890 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1330 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1330 , res = 2938 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1330 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1330 , res = 890 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1330 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1330 , res = 2938 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 7
+# AT                 1370, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1370 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1370 , rst = 0 , ce = 0 , mode = 1 , cmd = 9 , inp_valid = 3, cin = 1 , opa = 225 , opb = 12
+#  Time: 1370 , res = 890 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1370 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =   130 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 1410 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1410 , res = 132 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1410 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1410 , res = 130 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1410 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1410 , res = 132 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1410 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1410 , res = 130 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 8
+# AT                 1450, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1450 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1450 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 25 , opb = 131
+#  Time: 1450 , res = 132 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1450 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 1490 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1490 , res = 201 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1490 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1490 , res = 202 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1490 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1490 , res = 201 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1490 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1490 , res = 202 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 9
+# AT                 1530, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1530 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1530 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 201 , opb = 19
+#  Time: 1530 , res = 201 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 1550 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 1550 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 1570 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1570 , res = 124 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1570 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1570 , res = 124 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 10
+# AT                 1610, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1610 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1610 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 179 , opb = 60
+#  Time: 1610 , res = 124 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1610 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 1650 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1650 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1650 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1650 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1650 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1650 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1650 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1650 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 10
+# AT                 1690, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1690 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1690 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 96 , opb = 141
+#  Time: 1690 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1690 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 1730 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1730 , res = 234 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1730 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1730 , res = 235 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1730 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1730 , res = 234 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1730 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1730 , res = 235 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 11
+# AT                 1770, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 1770 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 50
+# 
+# 	Monitor delay
+#  Time: 1770 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 234 , opb = 207
+#  Time: 1770 , res = 234 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1770 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 1810 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1810 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1810 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1810 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1810 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1810 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1810 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1810 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 11
+# AT                 1850, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1850 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 1850 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 234 , opb = 45
+#  Time: 1850 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1850 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =    85 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 1890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1890 , res = 87 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1890 , res = 85 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1890 , res = 87 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1890 , res = 85 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 12
+# AT                 1930, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 1930 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 1930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 1930 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 207 , opb = 86
+#  Time: 1930 , res = 87 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 1930 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 1930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =   233 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 1970 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 1970 , res = 235 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 1970 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 1970 , res = 233 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 1970 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 1970 , res = 235 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 1970 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 1970 , res = 233 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 13
+# AT                 2010, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2010 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2010 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 2010 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 225 , opb = 234
+#  Time: 2010 , res = 235 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2010 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2010 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 2050 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2050 , res = 101 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2050 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2050 , res = 101 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2050 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2050 , res = 101 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2050 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2050 , res = 101 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 14
+# AT                 2090, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2090 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2090 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 2090 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 178 , opb = 55
+#  Time: 2090 , res = 101 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2090 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2090 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 2130 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2130 , res = 249 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2130 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2130 , res = 249 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2130 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2130 , res = 249 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2130 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2130 , res = 249 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 12
+# AT                 2170, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2170 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 2170 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 6 , opb = 132
+#  Time: 2170 , res = 249 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2170 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 2210 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2210 , res = 247 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2210 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2210 , res = 247 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2210 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2210 , res = 247 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2210 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2210 , res = 247 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 15
+# AT                 2250, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2250 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2250 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 51
+# 
+# 	Monitor delay
+#  Time: 2250 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 247 , opb = 224
+#  Time: 2250 , res = 247 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2250 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2250 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 2270 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 2270 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 2290 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2290 , res = 31 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2290 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2290 , res = 31 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 16
+# AT                 2330, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2330 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 52
+# 
+# 	Monitor delay
+#  Time: 2330 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 246 , opb = 80
+#  Time: 2330 , res = 31 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2330 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 2370 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2370 , res = 254 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2370 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2370 , res = 254 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2370 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2370 , res = 254 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2370 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2370 , res = 254 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 13
+# AT                 2410, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2410 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 52
+# 
+# 	Monitor delay
+#  Time: 2410 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 45 , opb = 3
+#  Time: 2410 , res = 254 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2410 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 2450 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2450 , res = 78 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2450 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2450 , res = 78 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2450 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2450 , res = 78 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2450 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2450 , res = 78 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 14
+# AT                 2490, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2490 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2490 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 230 , opb = 152
+#  Time: 2490 , res = 78 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2490 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 2510 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2510 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 2510 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2510 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 2530 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2530 , res = 48 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2530 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2530 , res = 48 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 17
+# AT                 2570, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2570 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2570 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 125 , opb = 62
+#  Time: 2570 , res = 48 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2570 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =    45 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 2610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2610 , res = 47 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2610 , res = 45 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2610 , res = 47 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2610 , res = 45 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 18
+# AT                 2650, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2650 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2650 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 167 , opb = 46
+#  Time: 2650 , res = 47 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2650 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 2690 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2690 , res = 190 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2690 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2690 , res = 190 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2690 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2690 , res = 190 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2690 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2690 , res = 190 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 15
+# AT                 2730, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2730 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2730 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2730 , rst = 0 , ce = 0 , mode = 0 , cmd = 4 , inp_valid = 3, cin = 1 , opa = 64 , opb = 254
+#  Time: 2730 , res = 190 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2730 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2730 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 2770 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2770 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2770 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2770 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2770 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2770 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2770 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2770 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 16
+# AT                 2810, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2810 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2810 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2810 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 91 , opb = 78
+#  Time: 2810 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2810 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2810 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 2850 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2850 , res = 113 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2850 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2850 , res = 113 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2850 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2850 , res = 113 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2850 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2850 , res = 113 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 17
+# AT                 2890, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 2890 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2890 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2890 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 64 , opb = 49
+#  Time: 2890 , res = 113 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2890 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2890 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 2930 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2930 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 2930 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2930 , res = 231 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 2930 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2930 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 2930 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2930 , res = 231 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 19
+# AT                 2970, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 2970 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 2970 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 2970 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 230 , opb = 57
+#  Time: 2970 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 2970 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 2970 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 3010 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 3010 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3010 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 3010 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3010 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 3010 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 3010 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 3010 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 18
+# AT                 3050, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3050 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3050 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 3050 , rst = 0 , ce = 0 , mode = 0 , cmd = 12 , inp_valid = 3, cin = 0 , opa = 153 , opb = 235
+#  Time: 3050 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR STARTED
+#  Time: 3050 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3050 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 3070 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 3070 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 3090 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3090 , res = 20 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3090 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3090 , res = 20 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 20
+# AT                 3130, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3130 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3130 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 3130 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 215 , opb = 8
+#  Time: 3130 , res = 20 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3130 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3130 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 3170 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3170 , res = 42 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3170 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3170 , res = 42 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3170 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3170 , res = 42 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3170 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3170 , res = 42 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 19
+# AT                 3210, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3210 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3210 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 53
+# 
+# 	Monitor delay
+#  Time: 3210 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 21 , opb = 22
+#  Time: 3210 , res = 42 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3210 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3210 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 3230 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 3230 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 3250 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3250 , res = 214 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3250 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3250 , res = 214 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 21
+# AT                 3290, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3290 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3290 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 41 , opb = 179
+#  Time: 3290 , res = 214 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3290 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 3330 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3330 , res = 33 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3330 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3330 , res = 35 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3330 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3330 , res = 33 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3330 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3330 , res = 35 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 22
+# AT                 3370, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3370 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3370 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 34 , opb = 34
+#  Time: 3370 , res = 33 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3370 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3370 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 3410 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3410 , res = 144 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3410 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3410 , res = 145 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3410 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3410 , res = 144 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3410 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3410 , res = 145 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 23
+# AT                 3450, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3450 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3450 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 144 , opb = 133
+#  Time: 3450 , res = 144 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3450 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3450 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 3490 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3490 , res = 86 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3490 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3490 , res = 43 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3490 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3490 , res = 86 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3490 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3490 , res = 43 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 24
+# AT                 3530, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3530 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3530 , rst = 0 , ce = 0 , mode = 0 , cmd = 8 , inp_valid = 1, cin = 1 , opa = 86 , opb = 248
+#  Time: 3530 , res = 86 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3530 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 3570 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3570 , res = 84 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3570 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3570 , res = 86 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3570 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3570 , res = 84 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3570 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3570 , res = 86 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 25
+# AT                 3610, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3610 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3610 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 194 , opb = 85
+#  Time: 3610 , res = 84 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3610 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3610 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 3650 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3650 , res = 49 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3650 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3650 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3650 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3650 , res = 49 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3650 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3650 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 26
+# AT                 3690, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3690 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3690 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 196 , opb = 50
+#  Time: 3690 , res = 49 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3690 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3690 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =    44 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 3730 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3730 , res = 46 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3730 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3730 , res = 44 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3730 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3730 , res = 46 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3730 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3730 , res = 44 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 27
+# AT                 3770, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3770 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3770 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 18 , opb = 45
+#  Time: 3770 , res = 46 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3770 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3770 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 3810 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3810 , res = 182 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3810 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3810 , res = 184 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3810 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3810 , res = 182 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3810 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3810 , res = 184 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 28
+# AT                 3850, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3850 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3850 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 208 , opb = 183
+#  Time: 3850 , res = 182 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3850 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3850 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =    39 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 3890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3890 , res = 41 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 3890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3890 , res = 39 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3890 , res = 41 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 3890 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3890 , res = 39 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 29
+# AT                 3930, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 3930 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 3930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 3930 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 64 , opb = 40
+#  Time: 3930 , res = 41 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 3930 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 3930 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 3950 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 3950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 3950 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 3950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 3970 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 3970 , res = 215 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 3970 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 3970 , res = 215 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 30
+# AT                 4010, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4010 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4010 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 54
+# 
+# 	Monitor delay
+#  Time: 4010 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 86 , opb = 173
+#  Time: 4010 , res = 215 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4010 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4010 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 4050 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4050 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4050 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4050 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4050 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4050 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4050 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4050 , res = 206 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 31
+# AT                 4090, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4090 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4090 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 55
+# 
+# 	Monitor delay
+#  Time: 4090 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 173 , opb = 205
+#  Time: 4090 , res = 204 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4090 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4090 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 4110 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 4110 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 4130 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4130 , res = 154 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4130 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4130 , res = 154 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 32
+# AT                 4170, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4170 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 55
+# 
+# 	Monitor delay
+#  Time: 4170 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 1 , opa = 88 , opb = 3
+#  Time: 4170 , res = 154 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4170 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4170 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 4210 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4210 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4210 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4210 , res = 199 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4210 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4210 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4210 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4210 , res = 199 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 33
+# AT                 4250, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4250 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4250 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 55
+# 
+# 	Monitor delay
+#  Time: 4250 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 7 , opb = 197
+#  Time: 4250 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4250 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4250 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 4290 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4290 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4290 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4290 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4290 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 20
+# AT                 4330, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4330 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 55
+# 
+# 	Monitor delay
+#  Time: 4330 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 28 , opb = 45
+#  Time: 4330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4330 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 4370 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4370 , res = 184 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4370 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4370 , res = 185 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4370 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4370 , res = 184 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4370 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4370 , res = 185 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 34
+# AT                 4410, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4410 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 56
+# 
+# 	Monitor delay
+#  Time: 4410 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 1 , opa = 184 , opb = 5
+#  Time: 4410 , res = 184 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4410 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4410 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 4450 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4450 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4450 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4450 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4450 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4450 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4450 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4450 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 21
+# AT                 4490, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4490 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 56
+# 
+# 	Monitor delay
+#  Time: 4490 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 119 , opb = 187
+#  Time: 4490 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4490 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 4530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4530 , res = 9 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4530 , res = 9 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4530 , res = 9 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4530 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4530 , res = 9 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 22
+# AT                 4570, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4570 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 56
+# 
+# 	Monitor delay
+#  Time: 4570 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 73 , opb = 169
+#  Time: 4570 , res = 9 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4570 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =   177 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 4610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4610 , res = 179 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4610 , res = 177 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4610 , res = 179 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4610 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4610 , res = 177 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 35
+# AT                 4650, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4650 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 56
+# 
+# 	Monitor delay
+#  Time: 4650 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 1 , opa = 43 , opb = 178
+#  Time: 4650 , res = 179 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4650 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 4670 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4670 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 4670 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4670 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 4690 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4690 , res = 100 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4690 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4690 , res = 100 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 36
+# AT                 4730, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4730 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4730 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 56
+# 
+# 	Monitor delay
+#  Time: 4730 , rst = 0 , ce = 0 , mode = 0 , cmd = 10 , inp_valid = 1, cin = 0 , opa = 64 , opb = 157
+#  Time: 4730 , res = 100 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4730 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4730 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 4770 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4770 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4770 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4770 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4770 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4770 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4770 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4770 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 23
+# AT                 4810, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4810 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4810 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 57
+# 
+# 	Monitor delay
+#  Time: 4810 , rst = 0 , ce = 0 , mode = 1 , cmd = 2 , inp_valid = 3, cin = 1 , opa = 116 , opb = 22
+#  Time: 4810 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4810 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4810 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 210
+# result extracting
+# 	MONITOR SIGNALS ENDED
+#  Time: 4870 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4870 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4870 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4870 , res = 15960 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4870 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4870 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4870 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4870 , res = 15960 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 37
+# AT                 4910, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 4910 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4910 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 57
+# 
+# 	Monitor delay
+#  Time: 4910 , rst = 0 , ce = 0 , mode = 1 , cmd = 10 , inp_valid = 3, cin = 0 , opa = 233 , opb = 76
+#  Time: 4910 , res = 134 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4910 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4910 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 4950 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4950 , res = 162 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 4950 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4950 , res = 164 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 4950 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4950 , res = 162 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 4950 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4950 , res = 164 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 38
+# AT                 4990, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 4990 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 4990 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 57
+# 
+# 	Monitor delay
+#  Time: 4990 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 69 , opb = 163
+#  Time: 4990 , res = 162 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 4990 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 4990 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 5030 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 5030 , res = 62 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5030 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 5030 , res = 62 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5030 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 5030 , res = 62 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5030 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 5030 , res = 62 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 24
+# AT                 5070, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5070 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 57
+# 
+# 	Monitor delay
+#  Time: 5070 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 28 , opb = 221
+#  Time: 5070 , res = 62 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5070 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5110 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5110 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5110 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5110 , res = 193 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5110 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5110 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5110 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5110 , res = 193 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 39
+# AT                 5150, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5150 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5150 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 57
+# 
+# 	Monitor delay
+#  Time: 5150 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 192 , opb = 245
+#  Time: 5150 , res = 192 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5150 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5150 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5190 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5190 , res = 121 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5190 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5190 , res = 121 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5190 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5190 , res = 121 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5190 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5190 , res = 121 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 25
+# AT                 5230, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 5230 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5230 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 1 , opa = 122 , opb = 88
+#  Time: 5230 , res = 121 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5230 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5270 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5270 , res = 964 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5270 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5270 , res = 196 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5270 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5270 , res = 964 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5270 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5270 , res = 196 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 40
+# AT                 5310, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5310 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5310 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5310 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 104 , opb = 164
+#  Time: 5310 , res = 964 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5310 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5310 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 5330 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 5330 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 5350 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5350 , res = 91 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5350 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5350 , res = 91 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 41
+# AT                 5390, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5390 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5390 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 0 , opa = 148 , opb = 182
+#  Time: 5390 , res = 91 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5390 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5430 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5430 , res = 172 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5430 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5430 , res = 174 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5430 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5430 , res = 172 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5430 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5430 , res = 174 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 42
+# AT                 5470, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5470 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5470 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5470 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 0 , opa = 21 , opb = 173
+#  Time: 5470 , res = 172 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5470 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5470 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 5510 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5510 , res = 80 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5510 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5510 , res = 80 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5510 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5510 , res = 80 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5510 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5510 , res = 80 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 26
+# AT                 5550, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5550 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5550 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 40 , opb = 82
+#  Time: 5550 , res = 80 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5550 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 5570 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 5570 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5570 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 5590 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5590 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5590 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5590 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 43
+# AT                 5630, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5630 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5630 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5630 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 1 , opa = 89 , opb = 238
+#  Time: 5630 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5630 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5630 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 5650 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 5650 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5650 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 5670 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5670 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5670 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5670 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 44
+# AT                 5710, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 5710 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5710 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5710 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 79 , opb = 174
+#  Time: 5710 , res = 90 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5710 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5710 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 5750 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5750 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5750 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5750 , res = 253 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5750 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5750 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5750 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5750 , res = 253 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 45
+# AT                 5790, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 5790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5790 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5790 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 189 , opb = 69
+#  Time: 5790 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5790 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5790 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5830 , res = 153 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5830 , res = 155 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5830 , res = 153 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5830 , res = 155 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 46
+# AT                 5870, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 5870 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5870 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5870 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 9 , opb = 154
+#  Time: 5870 , res = 153 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5870 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5910 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5910 , res = 944 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5910 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5910 , res = 176 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5910 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5910 , res = 944 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5910 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5910 , res = 176 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 47
+# AT                 5950, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 5950 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 5950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 5950 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 166 , opb = 246
+#  Time: 5950 , res = 944 , oflow = 1 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 5950 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 5950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 5990 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 5990 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 5990 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 5990 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 5990 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 5990 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 5990 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 5990 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 27
+# AT                 6030, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6030 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6030 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 1 , opa = 99 , opb = 47
+#  Time: 6030 , res = 51 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6030 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 6070 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6070 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6070 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6070 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6070 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6070 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6070 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6070 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 28
+# AT                 6110, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6110 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6110 , rst = 0 , ce = 0 , mode = 0 , cmd = 5 , inp_valid = 3, cin = 0 , opa = 18 , opb = 11
+#  Time: 6110 , res = 230 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6110 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6110 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 6150 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6150 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6150 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6150 , res = 245 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6150 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6150 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6150 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6150 , res = 245 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 48
+# AT                 6190, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6190 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6190 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6190 , rst = 0 , ce = 0 , mode = 0 , cmd = 2 , inp_valid = 3, cin = 0 , opa = 133 , opb = 244
+#  Time: 6190 , res = 1 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6190 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6190 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6230 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6230 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6230 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6230 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 29
+# AT                 6270, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6270 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6270 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 51 , opb = 190
+#  Time: 6270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6270 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6270 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6310 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6310 , res = 195 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6310 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6310 , res = 195 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6310 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6310 , res = 195 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6310 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6310 , res = 195 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 30
+# AT                 6350, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6350 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6350 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6350 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 19 , opb = 176
+#  Time: 6350 , res = 195 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6350 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6350 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6390 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6390 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6390 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6390 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 31
+# AT                 6430, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6430 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6430 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6430 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 0 , opa = 29 , opb = 152
+#  Time: 6430 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 1 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6430 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6430 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 6470 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6470 , res = 76 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6470 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6470 , res = 76 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6470 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6470 , res = 76 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6470 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6470 , res = 76 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 32
+# AT                 6510, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6510 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6510 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6510 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 166 , opb = 166
+#  Time: 6510 , res = 76 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6510 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6510 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6550 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6550 , res = 108 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6550 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6550 , res = 108 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6550 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6550 , res = 108 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6550 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6550 , res = 108 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 33
+# AT                 6590, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6590 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6590 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6590 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 109 , opb = 15
+#  Time: 6590 , res = 108 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6590 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6590 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 6630 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6630 , res = 25 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6630 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6630 , res = 25 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6630 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6630 , res = 25 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6630 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6630 , res = 25 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 49
+# AT                 6670, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6670 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6670 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 58
+# 
+# 	Monitor delay
+#  Time: 6670 , rst = 0 , ce = 0 , mode = 0 , cmd = 13 , inp_valid = 3, cin = 0 , opa = 25 , opb = 80
+#  Time: 6670 , res = 25 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6670 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6670 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# DEC OPB ACTIVATED
+# INP_VALID2 SELECTED
+# res =   165 , oflow = 0
+# 	MONITOR SIGNALS ENDED
+#  Time: 6710 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6710 , res = 167 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6710 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6710 , res = 165 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6710 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6710 , res = 167 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6710 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6710 , res = 165 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 50
+# AT                 6750, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6750 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6750 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 6750 , rst = 0 , ce = 0 , mode = 1 , cmd = 7 , inp_valid = 2, cin = 0 , opa = 17 , opb = 166
+#  Time: 6750 , res = 167 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6750 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6750 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6790 , res = 94 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6790 , res = 96 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6790 , res = 94 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6790 , res = 96 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 51
+# AT                 6830, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 6830 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6830 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 6830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 192 , opb = 95
+#  Time: 6830 , res = 94 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6830 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6830 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 6870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6870 , res = 137 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6870 , res = 137 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6870 , res = 137 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6870 , res = 137 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 34
+# AT                 6910, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6910 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6910 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 6910 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 1 , opa = 141 , opb = 155
+#  Time: 6910 , res = 137 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6910 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6910 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 6950 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6950 , res = 193 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 6950 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6950 , res = 194 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 6950 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6950 , res = 193 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 6950 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6950 , res = 194 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 52
+# AT                 6990, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 6990 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 6990 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 6990 , rst = 0 , ce = 0 , mode = 1 , cmd = 4 , inp_valid = 1, cin = 0 , opa = 193 , opb = 244
+#  Time: 6990 , res = 193 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 6990 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 6990 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 7030 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 7030 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7030 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 7030 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7030 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 7030 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7030 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 7030 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 35
+# AT                 7070, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 7070 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7070 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 0 , opa = 116 , opb = 82
+#  Time: 7070 , res = 139 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7070 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7070 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7110 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7110 , res = 125 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7110 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7110 , res = 125 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7110 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7110 , res = 125 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7110 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7110 , res = 125 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 36
+# AT                 7150, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 7150 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7150 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7150 , rst = 0 , ce = 0 , mode = 1 , cmd = 3 , inp_valid = 3, cin = 0 , opa = 189 , opb = 64
+#  Time: 7150 , res = 125 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7150 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7150 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7190 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7190 , res = 117 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7190 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7190 , res = 117 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7190 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7190 , res = 117 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7190 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7190 , res = 117 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 37
+# AT                 7230, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7230 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7230 , rst = 0 , ce = 0 , mode = 1 , cmd = 1 , inp_valid = 3, cin = 0 , opa = 161 , opb = 44
+#  Time: 7230 , res = 117 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7230 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7230 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 7270 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7270 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7270 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7270 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7270 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7270 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7270 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7270 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 38
+# AT                 7310, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7310 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7310 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7310 , rst = 0 , ce = 0 , mode = 0 , cmd = 9 , inp_valid = 1, cin = 0 , opa = 172 , opb = 245
+#  Time: 7310 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7310 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7310 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 7330 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 7330 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7330 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 7350 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7350 , res = 211 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7350 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7350 , res = 211 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 53
+# AT                 7390, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7390 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7390 , rst = 0 , ce = 0 , mode = 0 , cmd = 7 , inp_valid = 1, cin = 1 , opa = 230 , opb = 0
+#  Time: 7390 , res = 211 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7390 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7390 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7430 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7430 , res = 163 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7430 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7430 , res = 163 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7430 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7430 , res = 163 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7430 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7430 , res = 163 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 39
+# AT                 7470, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7470 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7470 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7470 , rst = 0 , ce = 0 , mode = 1 , cmd = 5 , inp_valid = 1, cin = 0 , opa = 164 , opb = 125
+#  Time: 7470 , res = 163 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7470 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7470 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 7490 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 7490 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7490 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 7510 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7510 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7510 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7510 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 54
+# AT                 7550, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 7550 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7550 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 126 , opb = 178
+#  Time: 7550 , res = 88 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7550 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7550 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7590 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7590 , res = 269 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7590 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7590 , res = 269 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7590 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7590 , res = 269 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7590 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7590 , res = 269 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 40
+# AT                 7630, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 7630 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7630 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7630 , rst = 0 , ce = 0 , mode = 1 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 174 , opb = 95
+#  Time: 7630 , res = 269 , oflow = 0 , cout = 1 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7630 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7630 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 7670 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7670 , res = 65 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7670 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7670 , res = 65 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7670 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7670 , res = 65 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7670 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7670 , res = 65 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 41
+# AT                 7710, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7710 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7710 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7710 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 3, cin = 0 , opa = 65 , opb = 97
+#  Time: 7710 , res = 65 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7710 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7710 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 7750 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7750 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7750 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7750 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7750 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7750 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7750 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7750 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 42
+# AT                 7790, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7790 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7790 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7790 , rst = 0 , ce = 0 , mode = 0 , cmd = 6 , inp_valid = 1, cin = 1 , opa = 33 , opb = 196
+#  Time: 7790 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7790 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7790 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7830 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7830 , res = 224 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7830 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7830 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7830 , res = 224 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 55
+# AT                 7870, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 7870 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7870 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7870 , rst = 0 , ce = 0 , mode = 1 , cmd = 6 , inp_valid = 2, cin = 1 , opa = 246 , opb = 223
+#  Time: 7870 , res = 222 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7870 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7870 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# MODE1 ACRIVATED
+# 	MONITOR SIGNALS ENDED
+#  Time: 7910 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7910 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 7910 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7910 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7910 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7910 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 7910 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7910 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 43
+# AT                 7950, driver ended
+# Enable = 1 Driving Signal
+# 	Driving signals For Single Operand
+#  Time: 7950 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 7950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 7950 , rst = 0 , ce = 0 , mode = 1 , cmd = 8 , inp_valid = 3, cin = 1 , opa = 216 , opb = 12
+#  Time: 7950 , res = 0 , oflow = 0 , cout = 0 , g = 1 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 7950 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 7950 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	REFERENCE SIGNALS 
+#  Time: 7970 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 7970 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	scorebord: reference_signals
+#  Time: 7970 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 7970 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 1
+# 
+# 	MONITOR SIGNALS ENDED
+#  Time: 7990 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 7990 , res = 24 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 7990 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 7990 , res = 24 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET FAILED = 56
+# AT                 8030, driver ended
+# Enable = 1 Driving Signal
+# 	 Driving Signals For Two Operands
+#  Time: 8030 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# INPUT FUNCTIONAL COVERAGE = 59
+# 
+# 	Monitor delay
+#  Time: 8030 , rst = 0 , ce = 0 , mode = 0 , cmd = 11 , inp_valid = 1, cin = 0 , opa = 208 , opb = 129
+#  Time: 8030 , res = 24 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	MONITOR STARTED
+#  Time: 8030 , rst = 0 , ce = 0 , mode = 0 , cmd = 0 , inp_valid = 0, cin = 0 , opa = 0 , opb = 0
+#  Time: 8030 , res = 0 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# CE is activated
+# 	MONITOR SIGNALS ENDED
+#  Time: 8070 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8070 , res = 151 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	REFERENCE SIGNALS 
+#  Time: 8070 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8070 , res = 151 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scoreboard: monitor_signals
+#  Time: 8070 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8070 , res = 151 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# 	scorebord: reference_signals
+#  Time: 8070 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8070 , res = 151 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+#  	 COMPARISION ON MON & SCB REPORT 
+# NUMBER OF PACKET PASSED = 44
+# AT                 8110, driver ended
+# 	Monitor delay
+#  Time: 8110 , rst = 0 , ce = 0 , mode = 0 , cmd = 1 , inp_valid = 3, cin = 1 , opa = 106 , opb = 124
+#  Time: 8110 , res = 151 , oflow = 0 , cout = 0 , g = 0 , l = 0 , e = 0 , err = 0
+# 
+# ** Note: $finish    : alu_top.sv(42)
+#    Time: 8110 ns  Iteration: 3  Instance: /alu_top
+# Saving coverage database on exit...
+# End time: 23:19:59 on Jul 27,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
