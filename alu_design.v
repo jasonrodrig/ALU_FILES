@@ -1,4 +1,4 @@
-/*module ALU_DESIGN #(parameter DW = 8, CW = 4)(INP_VALID,OPA,OPB,CIN,CLK,RST,CMD,CE,MODE,COUT,OFLOW,RES,G,E,L,ERR);
+module ALU_DESIGN #(parameter DW = 8, CW = 4)(INP_VALID,OPA,OPB,CIN,CLK,RST,CMD,CE,MODE,COUT,OFLOW,RES,G,E,L,ERR);
   input [DW-1:0] OPA,OPB;
   input CLK,RST,CE,MODE,CIN;
   input [CW-1:0] CMD;
@@ -246,7 +246,7 @@
    end
 endmodule
 
-*/
+/*
 module ALU_DESIGN #(parameter OPERAND_WIDTH = 8, parameter CMD_WIDTH = 4)(
     // INPUTS
     input CLK, RST, MODE, CE, CIN,
@@ -596,4 +596,4 @@ assign COUT = ((TEMP_MODE) && (TEMP_CMD == 4'd0 || TEMP_CMD == 4'd2 || TEMP_CMD 
 
 
 endmodule
-
+*/

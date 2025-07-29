@@ -251,7 +251,7 @@ class alu_driver;
 					driver_trans.display("Reset = 1 Driving Signal");
 				end // rst end statement
 				else begin
-					repeat(1)@(vif.driv_cb);
+					//repeat(1)@(vif.driv_cb);
 					if(vif.driv_cb.ce == 0) $display("Enable = 0 Driving Signal");
 					else                    $display("Enable = 1 Driving Signal");
 

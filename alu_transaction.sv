@@ -27,7 +27,7 @@ class alu_transaction;
 	 opb inside {[ 0 : ( ( 2 ** `DATA_WIDTH) - 1 ) ]};
 	}
 
- constraint input_valid_selection{
+/* constraint input_valid_selection{
       if     ( ( mode == 1 && cmd == 4 ) || ( mode == 1 && cmd == 5 ) )   inp_valid == 2'b01;
 			else if( ( mode == 1 && cmd == 6 ) || ( mode == 1 && cmd == 7 ) )   inp_valid == 2'b10;
 			else if( ( mode == 1 && cmd == 0 ) || ( mode == 1 && cmd == 1 ) ||
@@ -41,7 +41,7 @@ class alu_transaction;
 				       ( mode == 0 && cmd == 11 ) )                               inp_valid == 2'b01;
 		 	else                                                            		inp_valid == 2'b11;
 	}
-
+*/
 	constraint cycle16{ mode == 1; cmd == 0;}
 
   function alu_transaction copy();
